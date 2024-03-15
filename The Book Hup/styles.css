@@ -1,55 +1,88 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background-color: floralwhite;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f1f1f1;
-  }
-  
-  .container {
-    width: 350px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  .forgot-password {
-    display: block;
-    text-align: start ;
-    margin-top: 10px;
-    color: #333;
-    text-decoration: none;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path_to_your_image.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.25rem; /* 20px */
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Center the form horizontally */
+  justify-content: center; /* Center the items horizontally within the form */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Add margin between input groups */
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  margin-top: 5px; /* Add margin between label and input */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 0.625rem; /* 10px */
+  border: 0.0625rem solid #ddd; /* 1px */
+  border-radius: 0.3125rem; /* 5px */
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 0.625rem; /* 10px */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem; /* 5px */
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password {
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
