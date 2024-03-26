@@ -1,0 +1,24 @@
+[
+    {
+      "type": "customer",
+      "name": "Fatima",
+      "surname": "Mohammed",
+      "shippingAddress": " Doha 123 Main St",
+      "username": "fff45",
+      "password": "password1",
+      "moneyBalance": 500.00
+    },
+    {
+      "type": "seller",
+      "companyName": "Acme Inc",
+      "username": "acmeseller",
+      "password": "password2",
+      "bankAccount": "123456789"
+    },
+    {
+      "type": "admin",
+      "username": "admin",
+      "password": "adminpass"
+    }
+  ]
+  
