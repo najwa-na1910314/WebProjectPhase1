@@ -10,11 +10,17 @@ header {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 .logo img {
     width: 100px; 
     height: auto; 
+}
+
+h1 {
+    margin: 0; 
+    font-size: 50px;
+    text-align: left; 
 }
 
 .search-area {
@@ -55,4 +61,38 @@ input[type="text"]::placeholder {
 
 .search-btn:hover {
     background-color: #45a049;
+}
+
+.books-area {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        text-align: center;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            flex: 1;
+        }
+
+        p {
+            width: 100%;
+            text-align: justify;
+        }
+    }
+
+    .card:hover {
+        box-shadow: 0 28px 36px 0 rgba(88, 11, 11, 0.2);
+    }
 }
