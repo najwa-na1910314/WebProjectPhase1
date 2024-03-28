@@ -18,6 +18,8 @@ body {
     }
     
     .search-container {
+        display: flex;
+        align-items: center;
         order: 2; /* Move search container to the right */
     }
     .search-box {
@@ -26,6 +28,7 @@ body {
         border-radius: 3px;
         background-color: white;
         margin-right: 5px;
+        vertical-align: middle;
     }
 
     .search-box::placeholder {
@@ -37,11 +40,13 @@ body {
         border: none;
         padding: 5px;
         border-radius: 3px;
+        vertical-align: middle;
     }
 
     .search-icon {
         width: 30px;
         height: 30px;
+        vertical-align: middle;
     }
 
     .logo-title-container {
@@ -53,17 +58,18 @@ body {
     .logo {
         width: 60px; /* Adjust the width as needed */
         height: auto; /* Maintain aspect ratio */
-        margin-right: 0; /* No space between logo and title */
+        margin-right: 10px; /* Add space between logo and title */
+        padding-bottom: 10px;
     }
     
     .title {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Aesthetic font */
         text-transform: uppercase; /* Convert text to all caps */
         margin: 0;
-        text-align: left; /* Align title to the left */
+        order: 2; /* Move title to the right */
+        padding-left: 10px;
     }
 
-    
     .title .green {
         color: #38b5b9;
     }
