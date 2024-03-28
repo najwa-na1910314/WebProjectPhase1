@@ -59,9 +59,59 @@ body {
     .title .red {
         color: rgb(186, 20, 20);
     }
+
+    .text-1{
+        position: absolute;
+        color: white;
+        left: 50%;
+        top: 15%;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 600;
+        transform: translate(-50%, -50%);
+     
+     }
+
+     .text-2 {
+        position: absolute;
+       color: white;
+       left: 50%;
+       bottom: 20%;
+       font-family: 'Bai Jamjuree', sans-serif;
+       font-weight: 400;
+       transform: translate(-50%, -50%);
+    }
+    
+    .menu {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        background-color:rgb(186, 20, 20);
+        
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+
+            li{
+                display: block;
+                background-color: rgb(186, 20, 20);
+                margin-bottom: 0.4rem;
+                
+                a {
+                    color: white;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+    }
     .banner-img {
         width: 100%;
         height: 50vh; /* Set the height to 25% of the viewport height */
         filter: contrast(70%); 
     }
+
 }
