@@ -56,16 +56,6 @@ body {
   background-color: #2c6272;
 }
 
-.login-footer {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.login-footer a {
-  color:#38b5b9;
-  text-decoration: none;
-}
-
 @media (max-width: 768px) {
   .login-container {
       margin-top: 50px;
