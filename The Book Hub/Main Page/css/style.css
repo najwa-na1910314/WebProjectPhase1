@@ -9,21 +9,17 @@ body {
     header {
         background-color: #f0f0f0; /* Example background color */
         padding: 10px;
-        
     }
 
     .header-content {
         display: flex;
         align-items: center;
-        justify-content:space-between; /* Ensure space between search bar and title */
-        
+        justify-content: space-between; /* Space between search bar and logo & title */
     }
-
+    
     .search-container {
-        display: flex;
-        align-items: center;
+        order: 2; /* Move search container to the right */
     }
-
     .search-box {
         padding: 5px;
         border: none;
@@ -44,23 +40,35 @@ body {
     }
 
     .search-icon {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
 
+    .logo-title-container {
+        display: flex;
+        align-items: center;
+        order: 1; /* Move logo and title container to the left */
+    }
+    
+    .logo {
+        width: 60px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 0; /* No space between logo and title */
+    }
+    
     .title {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Aesthetic font */
         text-transform: uppercase; /* Convert text to all caps */
         margin: 0;
-        text-align: center; /* Align title at the center */
-        padding-right: 550px;
+        text-align: left; /* Align title to the left */
     }
 
-    .title .red {
-        color: rgb(186, 20, 20);
+    
+    .title .green {
+        color: #38b5b9;
     }
 
-    .text-1{
+    .text-1 {
         position: absolute;
         color: white;
         left: 50%;
@@ -68,26 +76,25 @@ body {
         font-family: 'Bai Jamjuree', sans-serif;
         font-weight: 600;
         transform: translate(-50%, -50%);
-     
-     }
+    }
 
-     .text-2 {
+    .text-2 {
         position: absolute;
-       color: white;
-       left: 50%;
-       bottom: 20%;
-       font-family: 'Bai Jamjuree', sans-serif;
-       font-weight: 400;
-       transform: translate(-50%, -50%);
+        color: white;
+        left: 50%;
+        bottom: 20%;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 400;
+        transform: translate(-50%, -50%);
     }
     
     .menu {
         position: absolute;
         width: 100%;
         text-align: center;
-        background-color:rgb(186, 20, 20);
+        background-color: #38b5b9;
         
-        ul{
+        ul {
             list-style: none;
             display: flex;
             justify-content: space-around;
@@ -95,23 +102,49 @@ body {
             padding: 0;
             margin: 0;
 
-            li{
+            li {
                 display: block;
-                background-color: rgb(186, 20, 20);
+                background-color: #38b5b9;
                 margin-bottom: 0.4rem;
                 
                 a {
                     color: white;
                     text-decoration: none;
-                    
                 }
             }
         }
     }
+
     .banner-img {
         width: 100%;
         height: 50vh; /* Set the height to 25% of the viewport height */
         filter: contrast(70%); 
     }
+    
+    /* Responsive styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .logo-title-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        padding-top: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-img {
+        height: 30vh;
+    }
+}
 }
