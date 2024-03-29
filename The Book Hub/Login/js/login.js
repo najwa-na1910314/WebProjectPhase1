@@ -9,10 +9,9 @@ function validateForm() {
             // Find the user with the matching username and password
             var user = users.find(user => user.username === username && user.password === password);
             if (user) {
-                // User is valid, you can redirect them to the main page or perform other actions
+                // User is valid, redirect them to the main page
                 console.log("Login successful for user:", user.username);
-                // Redirect to the main page or another page based on the user type
-                // For example: window.location.href = 'main.html';
+                window.location.href = '../../Main Page/index.html'; // Replace 'main.html' with the URL of your main page
             } else {
                 // User is invalid, show an error message
                 alert("Invalid username or password");
