@@ -17,7 +17,8 @@
         ],
         "categories": [
             "Microsoft .NET"
-        ]
+        ],
+        "price": 40
     },
     {
         "_id": 199,
@@ -37,7 +38,8 @@
         "categories": [
             "Business",
             "Software Engineering"
-        ]
+        ],
+        "price": 75
     },
     {
         "_id": 201,
@@ -57,7 +59,8 @@
         ],
         "categories": [
             "Java"
-        ]
+        ],
+        "price": 95
     },
     {
         "_id": 202,
@@ -79,7 +82,8 @@
         ],
         "categories": [
             "Internet"
-        ]
+        ],
+        "price": 67
     },
     {
         "_id": 203,
@@ -98,7 +102,8 @@
         ],
         "categories": [
             "Web Development"
-        ]
+        ],
+        "price": 97
     },
     {
         "_id": 204,
@@ -117,7 +122,8 @@
         ],
         "categories": [
             "Java"
-        ]
+        ],
+        "price": 89
     },
     {
         "_id": 206,
@@ -140,7 +146,8 @@
         "categories": [
             "Software Engineering",
             "Theory"
-        ]
+        ],
+        "price": 90
     },
     {
         "_id": 208,
@@ -159,7 +166,8 @@
         ],
         "categories": [
             "Java"
-        ]
+        ],
+        "price": 78
     },
     {
         "_id": 211,
@@ -178,7 +186,8 @@
         ],
         "categories": [
             "Internet"
-        ]
+        ],
+        "price": 56
     },
     {
         "_id": 214,
@@ -197,7 +206,8 @@
         ],
         "categories": [
             "Internet"
-        ]
+        ],
+        "price": 120
     },
     {
         "_id": 219,
@@ -216,7 +226,8 @@
         ],
         "categories": [
             "Business"
-        ]
+        ],
+        "price": 78
     },
     {
         "_id": 221,
@@ -239,7 +250,8 @@
         "categories": [
             "Client-Server",
             "Networking"
-        ]
+        ],
+        "price": 102
     },
     {
         "_id": 222,
@@ -260,7 +272,8 @@
         "categories": [
             "Client-Server",
             "Networking"
-        ]
+        ],
+        "price": 48
     },
     {
         "_id": 224,
@@ -282,7 +295,8 @@
         ],
         "categories": [
             "Microsoft .NET"
-        ]
+        ],
+        "price": 88
     },
     {
         "_id": 225,
@@ -301,7 +315,8 @@
         ],
         "categories": [
             "Microsoft"
-        ]
+        ],
+        "price": 99
     },
     {
         "_id": 226,
@@ -324,6 +339,7 @@
         ],
         "categories": [
             "Web Development"
-        ]
+        ], 
+        "price": 113
     }
 ]

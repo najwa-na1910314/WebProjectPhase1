@@ -75,6 +75,7 @@ body {
     }
 
     .text-1 {
+        display: flex;
         position: absolute;
         color: white;
         left: 9%;
@@ -86,6 +87,7 @@ body {
     }
 
     .text-2 {
+        display: flex;
         position: absolute;
         color: #44d5da;
         left: 15%;
@@ -129,6 +131,27 @@ body {
         height: 50vh; /* Set the height to 25% of the viewport height */
         filter: contrast(65%); 
     }
+
+    .main-content {
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            justify-items: center;
+
+            .book-card {
+                max-width: 300px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+                border-radius: 8px;
+                padding: 0.8rem;
+                margin: 12px;
+
+                .card-image {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 8px;
+                }
+            }
+    }
     
     /* Responsive styles */
 @media (max-width: 768px) {
@@ -156,4 +179,17 @@ body {
         height: 30vh;
     }
 }
+}
+
+.footer {
+    background-color: #3acfd4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
 }
