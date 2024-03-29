@@ -61,6 +61,13 @@ async function page(pageUrl) {
     mainContent.innerHTML = pageHTMLContent;
 }
 
+async function buyBook(title) {
+    const purchasePageUrl = '../../Purchase Item/purchase.html';
+
+    // Redirect to the purchase page
+    window.location.href = purchasePageUrl; //not working
+}
+
 function toHTML(book) {
     return `
         <div class="book-card">
@@ -69,9 +76,9 @@ function toHTML(book) {
         <br>
         <h7>Author(s): ${book.authors}</h7>
         <br>
-        <h7>Status: ${book.status}</h7>
-        <br>
         <h7>Price: ${book.price}$</h7>
+        <br>
+        <button onclick="buyBook('${book.title}')">BUY NOW</button>
         </div>
     `
 }
