@@ -15,7 +15,8 @@ async function user_login(username, password) {
     (user) => user.username === username && user.password === password
   );
   if (user == undefined) {
-    console.log("Incorrect data");
+    console.log("Unregistered user!");
+    alert("Unregistered user!")
   } else {
     localStorage.setItem("user_data", JSON.stringify(user));
     if (user["type"] == "customer") {
