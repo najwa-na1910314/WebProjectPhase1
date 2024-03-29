@@ -4,8 +4,17 @@
     box-sizing: border-box;
     font-size: 18px; 
 }
+html{
+    height: 100%;
+}
 
 body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     header {
         background-color: #f0f0f0; 
         padding: 10px;
@@ -109,21 +118,26 @@ body {
 }
 
 .purchase-history h2 {
-    margin-top: 0; /* Reset margin to remove any default spacing */
+    margin-top: 0; 
     
 
 }
 .purchase-history-table {
-    margin: 0 auto; /* This will center the table horizontally */
-    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; 
+    width: 50%; 
+    border-collapse: collapse;
 }
 
 .purchase-history-table th,
 .purchase-history-table td {
-    padding: 12px 20px; /* Adjust the padding as needed */
+    padding: 12px 20px; 
+    border: 1px solid #ddd;
+}
+
+.purchase-history-table th {
+    background-color: #f2f2f2;
 }
     
-/* Add this CSS code */
 .purchase-history-table button {
     padding: 8px 16px;
     background-color: #44d5da;
@@ -170,6 +184,8 @@ body {
     color: #fff;
     padding: 20px;
     text-align: center;
+    margin-top: auto; 
+    flex-shrink: 0;
 }
 
 .footer-content {
