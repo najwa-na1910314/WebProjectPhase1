@@ -4,7 +4,12 @@
     "type": "customer",
     "name": "Fatima",
     "surname": "Mohammed",
-    "shippingAddress": " Doha 123 Main St",
+    "shippingAddress": {
+      "city" : "Doha",
+      "zone" : "90",
+      "streetNo" : "310",
+      "buildingNo": "45"
+    },
     "username": "fa12345",
     "password": "fa12345",
     "moneyBalance": 500.0
