@@ -71,7 +71,7 @@ body {
     }
 
     .title .green {
-        color: #44d5da;
+        color: #38b5b9;
     }
 
     .text-1 {
@@ -89,7 +89,7 @@ body {
     .text-2 {
         display: flex;
         position: absolute;
-        color: #44d5da;
+        color: #38b5b9;
         left: 15%;
         bottom: 55%;
         font-family: "Times New Roman", Times, serif; 
@@ -103,7 +103,7 @@ body {
         position: absolute;
         width: 100%;
         text-align: center;
-        background-color: #44d5da;
+        background-color: #38b5b9;
         
         ul {
             list-style: none;
@@ -115,7 +115,7 @@ body {
 
             li {
                 display: block;
-                background-color: #44d5da;
+                background-color: #38b5b9;
                 margin-bottom: 0.4rem;
                 
                 a {
@@ -182,7 +182,7 @@ body {
 }
 
 .footer {
-    background-color: #3acfd4;
+    background-color: #38b5b9;
     color: #fff;
     padding: 20px;
     text-align: center;

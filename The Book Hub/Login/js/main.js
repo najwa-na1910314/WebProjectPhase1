@@ -1,5 +1,6 @@
 const booksArea = document.querySelector("#books-list");
-
+const searchInput = document.querySelector("#search");
+searchInput.addEventListener("input", handleSearchInput);
 function toHtml(book) {
     return `
         <div class="book-card">
@@ -42,6 +43,22 @@ async function displayBooks() {
     }
 
     booksArea.innerHTML = books.map(book => toHtml(book)).join('');
+}
+
+function handleSearchInput() {
+    const query = searchInput.value.toLowerCase();
+    const books = JSON.parse(localStorage.getItem("books"));
+    const filteredBooks = books.filter(book => {
+        const title = book.title.toLowerCase();
+        // Ensure authors is treated as an array before using join
+        const authors = Array.isArray(book.authors) ? book.authors.join(", ").toLowerCase() : "";
+        return title.includes(query) || authors.includes(query);
+    });
+    displayBooks(filteredBooks);
+}
+
+function displayBooks(books) {
+    booksList.innerHTML = books.map(book => toHtml(book)).join("");
 }
 
 // Call displayBooks() to populate books on page load

@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         showBooks()
 })
 
+document.querySelector('.search-button').addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent form submission
+    const searchQuery = document.querySelector('.search-box').value.toLowerCase();
+    filterBooks(searchQuery);
+});
 
 let books = [] //empty array to store added books
 
