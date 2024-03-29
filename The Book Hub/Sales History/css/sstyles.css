@@ -59,7 +59,7 @@
 }
 
 header {
-    background-color: rgb(186, 20, 20);
+    background-color: #44d5da;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -88,6 +88,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
+    padding-left: 20px;
 }
 
 main {
@@ -110,7 +111,7 @@ main {
 }
 
 .item-details button {
-    background-color: rgb(186, 20, 20);
+    background-color: #44d5da;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -123,11 +124,11 @@ table {
 }
 
 table, th, td {
-    border: 1px solid rgb(186, 20, 20);
+    border: 1px solid #44d5da;
     padding: 10px;
 }
 
 table th {
-    background-color: rgb(186, 20, 20);
+    background-color: #44d5da;
     color: #fff;
 }
