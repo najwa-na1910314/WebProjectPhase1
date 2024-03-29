@@ -123,6 +123,7 @@ body {
 
 }
 .purchase-history-table {
+    padding-left: 7%;
     margin: 0 auto; 
     width: 50%; 
     border-collapse: collapse;
