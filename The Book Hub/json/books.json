@@ -12,7 +12,7 @@
     "longDescription": "The data locked in your organization's systems and databases is a precious   and sometimes untapped   resource. The SharePoint Business Data Catalog makes it easy to gather, analyze, and report on data from multiple sources, through SharePoint. Using standard web parts, an efficient management console, and a simple programming model, you can build sites, dashboards, and applications that maximize this business asset.    SharePoint 2007 Developer's Guide to Business Data Catalog is a practical, example-rich guide to the features of the BDC and the techniques you need to build solutions for end users. The book starts with the basics   what the BDC is, what you can do with it, and how to pull together a BDC solution. With the fundamentals in hand, it explores the techniques and ideas you need to put BDC into use effectively in your organization.    Knowledge of SharePoint Server and WSS is required.    WHAT'S INSIDE        * The BDC Object Model      * How to build BDC applications      * BDC-driven search      * Integrating with Office, CRM, and InfoPath",
     "status": "AVAILABLE",
     "authors": ["Rainbow Rowell"],
-    "categories": ["Microsoft .NET"],
+    "categories": ["Young-adult Fiction"],
     "quantity": 10,
     "price": 40
   },
@@ -29,262 +29,328 @@
     "longDescription": "Only a handful of Information Technology leaders understand the complete range of IT issues, from basic technology to business strategy. One of them, Harold Lorin, has written a definitive guide for the IT decision maker, the technologist, and the system developer.    The breadth and insight of Doing IT Right is unparalleled. Its usefulness as a guide to deeper understanding of business computing will be appreciated by professionals and managers at all levels. This book covers a rich collection of topics, each explained, interrelated, and placed in a coherent framework so that its importance and likely evolution are clear. The author does not shy away from stating his views; he provides color, insight and humor.    Doing IT Right is a tour de force based on Lorin's prodigious knowledge of the industry derived from years of involvement with development and marketing at IBM and other systems houses and from consulting in a variety of environments. It also has its roots in a great many publications of the author, from trade and journal articles and book chapters to six earlier books.    Doing IT Right explores IT in its full complexity. It explains fundamental issues of hardware and software structures; it illuminates central issues of networking and encapsulates the essence of client/server computing; its coverage of costing, risk assessment, and due diligence in making computing decisions is unique; its presentation of the concepts and issues of object-orientation was considered by the managers at an IBM development laboratory to be Unique and more informative than fifteen other OO presentations put together.",
     "status": "PUBLISH",
     "authors": ["Markus Zusak"],
-    "categories": ["Business", "Software Engineering"],
+    "categories": ["Historical Fiction"],
     "quantity": 10,
     "price": 75
   },
   {
     "_id": 201,
-    "title": "Ant in Action",
+    "title": "Divergent",
     "isbn": "193239480X",
     "pageCount": 600,
     "publishedDate": {
       "$date": "2007-07-01T00:00:00.000-0700"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/loughran.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/f/f4/Divergent_%28book%29_by_Veronica_Roth_US_Hardcover_2011.jpg",
     "shortDescription": "The most widely used build tool for Java projects, Ant is cross-platform, extensible, simple, and fast. It scales from small personal projects to large, multi-team enterprise projects. And, most important, it   s easy to learn.",
     "longDescription": "Ant in Action is a complete guide to using Ant to build, test, redistribute and deploy Java applications. A retitled second edition of the bestselling and award-winning Java Development with Ant, this book contains over 50% new content including:    New Ant 1.7 features  Scalable builds for big projects  Continuous integration techniques  Deployment  Library management  Extending Ant  Whether you are dealing with a small library or a complex server-side system, this book will help you master your build process. By presenting a running example that grows in complexity, the book covers nearly the entire gamut of modern Java application development, including test-driven development and even how to set up your database as part of the deployment.",
     "status": "PUBLISH",
-    "authors": ["Steve Loughran", "Erik Hatcher"],
-    "categories": ["Java"],
+    "authors": ["Veronica Roth"],
+    "categories": ["Dystopian Fiction"],
     "quantity": 10,
     "price": 95
   },
   {
     "_id": 202,
-    "title": "Restlet in Action",
+    "title": "Insurgent",
     "isbn": "193518234X",
     "pageCount": 450,
     "publishedDate": {
       "$date": "2012-09-26T00:00:00.000-0700"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/louvel.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/9/9c/Insurgent_%28book%29.jpeg",
     "shortDescription": "Restlet in Action gets you started with the Restlet Framework and the REST architecture style. You'll create and deploy applications in record time while learning to use popular RESTful Web APIs effectively. This book looks at the many faces of web development, including server- and client-side, along with cloud computing, mobile Android devices, and semantic web applications. It offers a particular focus on Google's innovative Google Web Toolkit, Google App Engine, and Android technologies.",
     "longDescription": "REpresentational State Transfer, better known as REST, is the architectural style that governs the web's request-and-response resource model. The open source Restlet Framework provides a simple, powerful Java-based API to implement RESTful web applications that supports and integrates with technologies such as Atom, Jetty, JSON, Spring, GWT, Google App Engine, and Android.    Restlet in Action gets you started with the Restlet Framework and the REST architecture style. You'll create and deploy applications in record time while learning to use popular RESTful Web APIs effectively. This book looks at the many faces of web development, including server- and client-side, along with cloud computing, mobile Android devices, and semantic web applications. It offers a particular focus on Google's innovative Google Web Toolkit, Google App Engine, and Android technologies.    The book takes you though a comprehensive presentation of Restlet's main features, including subjects like security, testing and automatic documentation. You'll learn while following the typical Restlet development process, with consistent illustrations based on a sample RESTful email app.    WHAT'S INSIDE        * Learn REST and Restlet from the ground up      * Deploy locally, to the cloud, or on mobile devices      * Numerous illustrations      * Reusable code samples      * Written by the creators of Restlet!    The book requires a basic knowledge of Java and the web, but no prior exposure to REST or Restlet is needed. You'll quickly get the big picture behind REST, the overall design of Restlet and RESTful web development.",
     "status": "PUBLISH",
-    "authors": ["Jerome Louvel", "Thierry Boileau", "", "Philippe Mougin"],
-    "categories": ["Internet"],
+    "authors": ["Veronica Roth"],
+    "categories": ["Dystopian Fiction"],
     "quantity": 10,
     "price": 67
   },
   {
     "_id": 203,
-    "title": "iText in Action",
+    "title": "Allegiant",
     "isbn": "1932394796",
     "pageCount": 688,
     "publishedDate": {
       "$date": "2006-11-01T00:00:00.000-0800"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lowagie.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/c/c9/Allegiant_novel_cover.jpg",
     "shortDescription": "\"I've been using iText for over a year, but I still learnt an awful lot while reading this book.\" --JavaLobby",
     "longDescription": "Say you need a tool to add dynamic or interactive features to a PDF file and you decide to search on Google for \"Java PDF.\" What do you think you'd find  Why, at the top of the page you'd find \"iText,\" of course. A leading tool for programmatic creation and manipulation of PDF documents, iText is an open source Java library developed and maintained by Bruno Lowagie, the author of this book, with the help of many contributors.    While at the entry level iText is easy to learn, developers find they soon need its more advanced features. Written by the master himself, iText in Action now offers an introduction and a practical guide to the subject--you will gain a sound understanding of the Portable Document Format and how to do interesting and useful things with PDF using iText.    iText in Action introduces iText and lowers the learning curve to its advanced features. Its numerous, valuable examples unlock many of the secrets hidden in Adobe's PDF Reference. The examples are in Java but they can be easily adapted to .NET using one of iText's .NET ports: iTextSharp (C#) or iText.NET (J#).",
     "status": "PUBLISH",
-    "authors": ["Bruno Lowagie"],
-    "categories": ["Web Development"],
+    "authors": ["Veronica Roth"],
+    "categories": ["Dystopian Fiction"],
     "quantity": 10,
     "price": 97
   },
   {
     "_id": 204,
-    "title": "iText in Action, Second Edition",
+    "title": "Harry Potter & the sorcerer's stone",
     "isbn": "1935182617",
     "pageCount": 600,
     "publishedDate": {
       "$date": "2010-11-22T00:00:00.000-0800"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lowagie2.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg",
     "shortDescription": "iText in Action, Second Edition offers an introduction and a practical guide to iText and the internals of PDF. While at the entry level iText is easy to learn, there's an astonishing range of things you can do once you dive below the surface. This book lowers the learning curve and, though numerous innovative and practical examples, unlocks the secrets hidden in Adobe's PDF Reference. The examples are in Java but they can be easily adapted to .NET using one of iText's .NET ports: iTextSharp or iText.NET.",
     "longDescription": "Far from a static document presentation format, PDF supports many dynamic or interactive features. With iText, the leading tool creating and manipulating PDF programmatically, you can transform PDF documents into live, interactive applications quickly and easily. iText, a free, open source library for Java and .NET, was developed and maintained by Bruno Lowagie, the author of this book, with the help of many contributors.    iText in Action, Second Edition offers an introduction and a practical guide to iText and the internals of PDF. While at the entry level iText is easy to learn, there's an astonishing range of things you can do once you dive below the surface. This book lowers the learning curve and, though numerous innovative and practical examples, unlocks the secrets hidden in Adobe's PDF Reference. The examples are in Java but they can be easily adapted to .NET using one of iText's .NET ports: iTextSharp or iText.NET.    This totally revised new edition introduces the new functionality added to iText in recent releases, and it updates all examples from JDK 1.4 to Java 5. You'll learn how to use traditional and new form types in PDF, including full coverage of the AcroForm technology. You'll also explore the XML Forms Architecture (XFA) and learn how to fill static and dynamic XFA forms with iText. Along the way, you'll discover new techniques for linking documents, creating a PDF based on records in a database, and much more.    WHAT'S INSIDE        * Serve PDF to a browser      * Automate both static and dynamic XFA forms      * Generate dynamic PDF documents from XML files or databases      * Use PDF's many interactive features      * Add bookmarks, page numbers, watermarks, etc.      * Split, concatenate, and manipulate PDF pages      * Add digital signatures to a PDF file      * New hands-on, ready to use examples",
     "status": "PUBLISH",
-    "authors": ["Bruno Lowagie"],
-    "categories": ["Java"],
+    "authors": ["J.K. Rowling"],
+    "categories": ["Fantasy"],
     "quantity": 100,
-    "price": 89
+    "price": 81
   },
   {
     "_id": 206,
-    "title": "SNA and TCP/IP Enterprise Networking",
+    "title": "Harry Potter & the chamber of secrets",
     "isbn": "131271687",
     "pageCount": 540,
     "publishedDate": {
       "$date": "1997-09-01T00:00:00.000-0700"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lynch.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg",
     "shortDescription": "SNA and TCP/IP Enterprise Networking shows the reader how enterprise networking evolved, what approaches and techniques can be used today, and where tomorrow's trends lie, illustrating among others Web-to-SNA connectivity and Java based integration approaches.",
     "longDescription": "Most textbooks concentrate on presenting the theory, concepts, and products, with examples of implementations in some cases. The distinctive quality of SNA and TCP/IP Enterprise Networking is in its structure. It answers not only \"What \", \"Why \", and \"How \", but also \"What's next \". It shows the reader how enterprise networking evolved, what approaches and techniques can be used today, and where tomorrow's trends lie, illustrating among others Web-to-SNA connectivity and Java based integration approaches.    SNA and TCP/IP Enterprise Networking was written by visionaries, scientists, networking product developers, industry experts, consultants, and end-user representatives, who not only implement the products but also participate in definition of open networking standards. It should be equally appealing to the network practitioners implementing technology as the senior managers making strategic decisions on enterprise networking.",
     "status": "PUBLISH",
     "authors": [
-      "Daniel C. Lynch",
-      "James P. Gray",
-      "and Edward Rabinovitch",
-      "editors"
+      "J.K. Rowling"
     ],
-    "categories": ["Software Engineering", "Theory"],
+    "categories": ["Fantasy"],
     "quantity": 100,
-    "price": 90
+    "price": 72
   },
   {
     "_id": 208,
-    "title": "Subversion in Action",
+    "title": "Harry Potter & the prisoner of Azkaban",
     "isbn": "1932394478",
     "pageCount": 356,
     "publishedDate": {
       "$date": "2004-12-01T00:00:00.000-0800"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/machols.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg",
     "shortDescription": "Learn all about this new open source version control application and why it is replacing CVS as the standard. Examples demonstrate how to customize features to deal with day-to-day problems.",
     "longDescription": "A new-generation version control tool, Subversion is replacing the current open source standard, CVS. With Subversion's control components you can simplify and streamline the management of your code way beyond what's possible with CVS. For example, with just one powerful feature, Subversion's atomic commit, you can easily track and roll back a set of changes.    Subversion in Action introduces you to Subversion and the concepts of version control. Using production-quality examples it teaches you how Subversion features can be customized and combined to effectively deal with your day-to-day source control problems. You'll learn how to do practical things you cannot do with CVS, like seamlessly renaming and moving files.    The book covers branching and repository control, access control, and much more. It is written not just for release engineers, but also for developers, configuration managers, and system administrators.",
     "status": "PUBLISH",
-    "authors": ["Jeffrey Machols"],
-    "categories": ["Java"],
+    "authors": ["J.K. Rowling"],
+    "categories": ["Fantasy"],
     "quantity": 100,
     "price": 78
   },
   {
     "_id": 211,
-    "title": "Comprehensive Networking Glossary and Acronym Guide",
+    "title": "Harry Potter & the Goblet of fire",
     "isbn": "013319955X",
     "pageCount": 208,
     "publishedDate": {
       "$date": "1995-01-01T00:00:00.000-0800"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/malkin.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/b/b6/Harry_Potter_and_the_Goblet_of_Fire_cover.png",
     "shortDescription": "This glossary offers a complete collection of technical terms and acronyms used in the networking industry.",
     "longDescription": "This glossary offers a complete collection of technical terms and acronyms used in the networking industry. It covers general networking terminology, the specific terminology used in the Internet, and terms and acronyms specific to AppleTalk, IP, IPX, SNA, and OSI. It also covers national and international networking organizations and several major networks.    Organized in case-insensitive, alphabetic order, entries present well written definitions, understandable to novice readers and useful to experts. The glossary and the glossary entries are:    verified  cross-referenced  comprehensive  concise  understandable  For extra guidance, the book ends with three appendices, each listing the entries in one of three subject areas: networks and organizations, security, and applications and protocols.  The Comprehensive Networking Glossary and Acronym Guide is a valuable, single-source reference for the practical terminology of networking as well as a guide to networks and networking organizations.",
     "status": "PUBLISH",
-    "authors": ["Gary Scott Malkin"],
-    "categories": ["Internet"],
+    "authors": ["J.K. Rowling"],
+    "categories": ["Fantasy"],
     "quantity": 100,
     "price": 56
   },
   {
     "_id": 214,
-    "title": "Internet BBSs",
+    "title": "Harry Potter & the order of the Phoenix",
     "isbn": "132869985",
     "pageCount": 400,
     "publishedDate": {
       "$date": "1996-10-01T00:00:00.000-0700"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mark.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/7/70/Harry_Potter_and_the_Order_of_the_Phoenix.jpg",
     "shortDescription": "Internet BBSs: A Guided Tour provides in-depth coverage of the new world of true BBSs now available world-wide. It is a valuable resource for anyone currently using the Internet.",
     "longDescription": "OK, so you use the Internet. You've surfed some Web sites and maybe sent e-mail. But, chances are, you've overlooked the rich and really personal dimension of the Internet represented by the explosive growth of Internet BBSs. That's because up till now BBS publications were limited in scope to the old era of dial-up BBSs.    Until recently the world of BBSs was geographically compartmentalized: in practical terms only the BBSs within a local telphone call were accessible. Now, the Internet has made all Internet BBSs accessible to anyone in the world. Internet BBSs: A Guided Tour provides in-depth coverage of this new world of true BBSs now available world-wide. It is a valuable resource for anyone currently using the Internet. Users of the major on-line service forums and chat groups should also read it to find out how they can access a much richer variety of BBSs at less cost.",
     "status": "PUBLISH",
-    "authors": ["Richard Scott Mark"],
-    "categories": ["Internet"],
+    "authors": ["J.K. Rowling"],
+    "categories": ["Fantasy"],
     "quantity": 220,
-    "price": 120
+    "price": 66
   },
   {
     "_id": 219,
-    "title": "Inside LotusScript",
+    "title": "Harry Potter & the half-blood prince",
     "isbn": "1884777481",
     "pageCount": 420,
     "publishedDate": {
       "$date": "1997-11-01T00:00:00.000-0800"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mcginn.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/b/b5/Harry_Potter_and_the_Half-Blood_Prince_cover.png",
     "shortDescription": "Develop Notes and Domino Web applications by providing advanced LotusScript code for direct use in your programs. This book emphasizes practical, useable code and solutions to common Notes programming problems.",
     "longDescription": "At last, here's a book that tells you everything that isn't in the Lotus Notes manuals. It's designed to make it easy for you to develop Notes and Domino Web applications by providing advanced LotusScript code for direct use in your programs. It emphasizes practical, useable code and solutions to common Notes programming problems. If you're interested in Internet or Web programming--or if you want to learn Notes programming, from beginner level to advanced, this book is for you!",
     "status": "PUBLISH",
-    "authors": ["Joe McGinn"],
-    "categories": ["Business"],
+    "authors": ["J.K. Rowling"],
+    "categories": ["Fantasy"],
     "quantity": 220,
     "price": 78
   },
   {
     "_id": 221,
-    "title": "Planning and Managing ATM Networks",
+    "title": "Harry Potter & the deathly hallows",
     "isbn": "132621894",
     "pageCount": 320,
     "publishedDate": {
       "$date": "1997-06-01T00:00:00.000-0700"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/minoli.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/a/a9/Harry_Potter_and_the_Deathly_Hallows.jpg",
     "shortDescription": "Planning and Managing ATM Networks covers strategic planning, initial deployment, overall management, and the day-to-day operation of ATM networks.",
     "longDescription": "Not only is ATM the best available means to greater transmission capacity, it has also the best potential to meet the needs for sophisticated service control, distributed network oversight, efficient operation, and improved flexibility.    Planning and Managing ATM Networks covers strategic planning, initial deployment, overall management, and the day-to-day operation of ATM networks. It defines steps to determine requirements for ATM networks, as ATM implementation becomes widespread in the corporate enterprise network. It describes fundamental management concepts and procedures, including fault and configuration management, performance management, accounting, and security.",
     "status": "PUBLISH",
-    "authors": ["Daniel Minoli", "Thomas W. Golway", "", "Norris P. Smith"],
-    "categories": ["Client-Server", "Networking"],
+    "authors": ["J.K. Rowling"],
+    "categories": ["Fantasy"],
     "quantity": 220,
-    "price": 102
+    "price": 67
   },
   {
     "_id": 222,
-    "title": "Client/Server Applications on ATM Networks",
+    "title": "Harry Potter & the cursed child",
     "isbn": "137353006",
     "pageCount": 350,
     "publishedDate": {
       "$date": "1997-01-01T00:00:00.000-0800"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/minoli2.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/8/87/Cursed_Child_new_poster.jpg",
     "shortDescription": "Client/Server Appliactions on ATM Networks discusses ATM as the key technology for transforming the enterprise network from data-only to an integrated data, voice, video, image and multimedia corporate infrastructure.",
     "longDescription": "Today, to meet the surging demands of client/server company-wide processes--distributed cooperative computing, business/scientific imaging, video conferencing, multimedia, distance learning and many more--corporations are finding they must extend high-speed communications beyond just a few key sites. This book discusses ATM as the key technology for transforming the enterprise network from data-only to an integrated data, voice, video, image and multimedia corporate infrastructure.    Previous books have covered ATM and client/server separately. This book, intended for networking professionals, is unique in its focus on the hows and whys of the inevitable marriage of these two technologies.",
     "status": "PUBLISH",
-    "authors": ["Daniel Minoli", "Andrew Schmidt"],
-    "categories": ["Client-Server", "Networking"],
+    "authors": ["J.K. Rowling"],
+    "categories": ["Fantasy"],
     "quantity": 220,
     "price": 48
   },
   {
     "_id": 224,
-    "title": "Entity Framework 4 in Action",
+    "title": "Into the Wild",
     "isbn": "1935182188",
     "pageCount": 576,
     "publishedDate": {
       "$date": "2011-05-01T00:00:00.000-0700"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mostarda.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/6/63/Into_the_Wild_%28book%29_cover.png",
     "shortDescription": "Microsoft Entity Framework in Action introduces the Entity Framework to developers working in .NET who already have some knowledge of ADO.NET. The book begins with a review of the core ideas behind the ORM model and shows how Entity Framework offers a smooth transition from a traditional ADO.NET approach. By presenting numerous small examples and a couple larger case studies, the book unfolds the Entity Framework story in clear, easy-to-follow detail. The infrastructure and inner workings will be highlighted only when there   s the need to understand a particular feature.",
     "longDescription": "To be successful, any significant application has to manage the flow of data effectively. Microsoft   s approach to data has taken another major step forward with the new Entity Framework for .NET. The Entity Framework starts with ideas from Object Relational Management (ORM) tools like NHibernate that help bridge the mismatch between relational databases (like SQL Server) and object oriented languages (like C# and VB.NET). But it also blends in the established ADO.NET model and recent language-based innovations of LINQ to create a powerful new data management paradigm.    Microsoft Entity Framework in Action introduces the Entity Framework to developers working in .NET who already have some knowledge of ADO.NET. The book begins with a review of the core ideas behind the ORM model and shows how Entity Framework offers a smooth transition from a traditional ADO.NET approach. By presenting numerous small examples and a couple larger case studies, the book unfolds the Entity Framework story in clear, easy-to-follow detail. The infrastructure and inner workings will be highlighted only when there   s the need to understand a particular feature.",
     "status": "PUBLISH",
     "authors": [
-      "Stefano Mostarda",
-      "Marco De Sanctis",
-      "",
-      "Daniele Bochicchio"
+      "Jon Krakauer"
     ],
-    "categories": ["Microsoft .NET"],
+    "categories": ["Non-fiction"],
     "quantity": 50,
     "price": 88
   },
   {
     "_id": 225,
-    "title": "ASP.NET 2.0 Web Parts in Action",
+    "title": "To Kill a Mockingbird",
     "isbn": "193239477X",
     "pageCount": 344,
     "publishedDate": {
       "$date": "2006-09-01T00:00:00.000-0700"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/neimke.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/330px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
     "shortDescription": "\"ASP.NET Web Parts in Action is a must read book for every developer who wants to extend his knowledge of the ASP.NET framework.\" -- Simon Busoli, DotNetSlackers.com",
     "longDescription": "The static Web is going out of style. Its click-and-wait user experience is giving way to dynamic personalized content and intuitive interactions. With ASP 2.0, a web developer can compose a page out of separate working parts \"Web Parts\" that independently communicate with the server to produce rich interactive portals like Yahoo!, Google/ig, and Live.com. The new Web Parts API makes it easy to centrally manage a portal's parts.    ASP.NET 2.0 Web Parts in Action is packed with annotated code, diagrams, and crystal-clear discussions. You'll develop a sample project from design to deployment, adding content zones, personalization, and a custom look-and-feel. Since any website is invariably a work-in-progress, you'll appreciate learning how to upgrade your portals on the fly. Along the way you'll pick up handy code instrumentation techniques and a few tricks to help your portals manage themselves. As an added bonus, the book introduces the Microsoft Ajax Library (\"Atlas\") and shows how you can add Ajax to a web part. You  ll even create a Live.com gadget.    This book is for web developers familiar with ASP.NET.",
     "status": "PUBLISH",
-    "authors": ["Darren Neimke"],
-    "categories": ["Microsoft"],
+    "authors": ["Harper Lee"],
+    "categories": ["Thriller"],
     "quantity": 50,
-    "price": 99
+    "price": 52
   },
   {
     "_id": 226,
-    "title": "Sass and Compass in Action",
+    "title": "The Alchemist",
     "isbn": "1617290149",
     "pageCount": 300,
     "publishedDate": {
       "$date": "2013-07-26T00:00:00.000-0700"
     },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/netherland.jpg",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/TheAlchemist.jpg/330px-TheAlchemist.jpg",
     "shortDescription": "Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.",
     "longDescription": "Cascading Style Sheets paint the web as the user sees it, and for fifteen years, we've been painting the web by hand. Sass and Compass extend standard CSS to give you more flexibility and the option to simplify or automate many tedious tasks. Think of Sass and Compass as power tools that allow stylesheet authors to \"paint\" with remarkable speed and precision.    Sass is an extension of CSS3, adding language features for creating well-formatted, standard CSS using the command line tool or a web-framework plugin. Compass is a framework that sits atop Sass and tackles common stylesheet problems such as grid layouts, handling CSS3 vendor differences, and production environment stylesheet optimization. Together, they do for CSS what jQuery has done for JavaScript: solve real world problems, letting designers and developers create stylesheets more efficiently.    Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.    Authors Wynn Netherland, Nathan Weizenbaum, and Chris Eppstein cover prominent community plugins that allows stylesheet authors to share styles as developers of other programming languages such as Ruby, Python, Java, and, .NET do. The book also presents Sass and Compass case studies using hot technologies like Sencha Touch. The book culminates in a step-by-step look at building a personal stylesheet framework in which readers can bundle their own approaches and opinions and reuse them across projects.",
     "status": "PUBLISH",
     "authors": [
-      "Wynn Netherland",
-      "Nathan Weizenbaum",
-      "Chris Eppstein",
-      "",
-      "Brandon Mathis"
+      "Paulo Coelho"
     ],
-    "categories": ["Web Development"],
+    "categories": ["Drama"],
     "quantity": 50,
-    "price": 113
+    "price": 43
+  },
+  {
+    "_id": 226,
+    "title": "The Kite Runner",
+    "isbn": "1617290149",
+    "pageCount": 300,
+    "publishedDate": {
+      "$date": "2013-07-26T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Kite_runner.jpg",
+    "shortDescription": "Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.",
+    "longDescription": "Cascading Style Sheets paint the web as the user sees it, and for fifteen years, we've been painting the web by hand. Sass and Compass extend standard CSS to give you more flexibility and the option to simplify or automate many tedious tasks. Think of Sass and Compass as power tools that allow stylesheet authors to \"paint\" with remarkable speed and precision.    Sass is an extension of CSS3, adding language features for creating well-formatted, standard CSS using the command line tool or a web-framework plugin. Compass is a framework that sits atop Sass and tackles common stylesheet problems such as grid layouts, handling CSS3 vendor differences, and production environment stylesheet optimization. Together, they do for CSS what jQuery has done for JavaScript: solve real world problems, letting designers and developers create stylesheets more efficiently.    Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.    Authors Wynn Netherland, Nathan Weizenbaum, and Chris Eppstein cover prominent community plugins that allows stylesheet authors to share styles as developers of other programming languages such as Ruby, Python, Java, and, .NET do. The book also presents Sass and Compass case studies using hot technologies like Sencha Touch. The book culminates in a step-by-step look at building a personal stylesheet framework in which readers can bundle their own approaches and opinions and reuse them across projects.",
+    "status": "PUBLISH",
+    "authors": [
+      "Khaled Hosseini"
+    ],
+    "categories": ["Historical Fiction"],
+    "quantity": 50,
+    "price": 59
+  },
+  {
+    "_id": 226,
+    "title": "A Thousand Splendid Suns",
+    "isbn": "1617290149",
+    "pageCount": 300,
+    "publishedDate": {
+      "$date": "2013-07-26T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/1/10/A_Thousand_Splendid_Suns.gif",
+    "shortDescription": "Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.",
+    "longDescription": "Cascading Style Sheets paint the web as the user sees it, and for fifteen years, we've been painting the web by hand. Sass and Compass extend standard CSS to give you more flexibility and the option to simplify or automate many tedious tasks. Think of Sass and Compass as power tools that allow stylesheet authors to \"paint\" with remarkable speed and precision.    Sass is an extension of CSS3, adding language features for creating well-formatted, standard CSS using the command line tool or a web-framework plugin. Compass is a framework that sits atop Sass and tackles common stylesheet problems such as grid layouts, handling CSS3 vendor differences, and production environment stylesheet optimization. Together, they do for CSS what jQuery has done for JavaScript: solve real world problems, letting designers and developers create stylesheets more efficiently.    Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.    Authors Wynn Netherland, Nathan Weizenbaum, and Chris Eppstein cover prominent community plugins that allows stylesheet authors to share styles as developers of other programming languages such as Ruby, Python, Java, and, .NET do. The book also presents Sass and Compass case studies using hot technologies like Sencha Touch. The book culminates in a step-by-step look at building a personal stylesheet framework in which readers can bundle their own approaches and opinions and reuse them across projects.",
+    "status": "PUBLISH",
+    "authors": [
+      "Khaled Hosseini"
+    ],
+    "categories": ["Historical Fiction"],
+    "quantity": 50,
+    "price": 62
+  },
+  {
+    "_id": 226,
+    "title": "The Haunting of Hill House",
+    "isbn": "1617290149",
+    "pageCount": 300,
+    "publishedDate": {
+      "$date": "2013-07-26T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/0/04/HauntingOfHillHouse.JPG",
+    "shortDescription": "Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.",
+    "longDescription": "Cascading Style Sheets paint the web as the user sees it, and for fifteen years, we've been painting the web by hand. Sass and Compass extend standard CSS to give you more flexibility and the option to simplify or automate many tedious tasks. Think of Sass and Compass as power tools that allow stylesheet authors to \"paint\" with remarkable speed and precision.    Sass is an extension of CSS3, adding language features for creating well-formatted, standard CSS using the command line tool or a web-framework plugin. Compass is a framework that sits atop Sass and tackles common stylesheet problems such as grid layouts, handling CSS3 vendor differences, and production environment stylesheet optimization. Together, they do for CSS what jQuery has done for JavaScript: solve real world problems, letting designers and developers create stylesheets more efficiently.    Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.    Authors Wynn Netherland, Nathan Weizenbaum, and Chris Eppstein cover prominent community plugins that allows stylesheet authors to share styles as developers of other programming languages such as Ruby, Python, Java, and, .NET do. The book also presents Sass and Compass case studies using hot technologies like Sencha Touch. The book culminates in a step-by-step look at building a personal stylesheet framework in which readers can bundle their own approaches and opinions and reuse them across projects.",
+    "status": "PUBLISH",
+    "authors": [
+      "Shirley Jackson"
+    ],
+    "categories": ["Horror"],
+    "quantity": 50,
+    "price": 48
+  },
+  {
+    "_id": 226,
+    "title": "Bird Box",
+    "isbn": "1617290149",
+    "pageCount": 300,
+    "publishedDate": {
+      "$date": "2013-07-26T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/b/b9/Bird_Box_2014_book_cover.jpg",
+    "shortDescription": "Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.",
+    "longDescription": "Cascading Style Sheets paint the web as the user sees it, and for fifteen years, we've been painting the web by hand. Sass and Compass extend standard CSS to give you more flexibility and the option to simplify or automate many tedious tasks. Think of Sass and Compass as power tools that allow stylesheet authors to \"paint\" with remarkable speed and precision.    Sass is an extension of CSS3, adding language features for creating well-formatted, standard CSS using the command line tool or a web-framework plugin. Compass is a framework that sits atop Sass and tackles common stylesheet problems such as grid layouts, handling CSS3 vendor differences, and production environment stylesheet optimization. Together, they do for CSS what jQuery has done for JavaScript: solve real world problems, letting designers and developers create stylesheets more efficiently.    Sass and Compass in Action is the definitive guide to stylesheet authoring using these two revolutionary tools. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring. The book begins with simple topics such as CSS resets and moves on to more involved topics such as grid frameworks and CSS3 vendor implementation differences.    Authors Wynn Netherland, Nathan Weizenbaum, and Chris Eppstein cover prominent community plugins that allows stylesheet authors to share styles as developers of other programming languages such as Ruby, Python, Java, and, .NET do. The book also presents Sass and Compass case studies using hot technologies like Sencha Touch. The book culminates in a step-by-step look at building a personal stylesheet framework in which readers can bundle their own approaches and opinions and reuse them across projects.",
+    "status": "PUBLISH",
+    "authors": [
+      "Josh Malerman"
+    ],
+    "categories": ["Horror"],
+    "quantity": 73,
+    "price": 65
   }
 ]
