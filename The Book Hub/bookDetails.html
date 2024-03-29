@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Item</title>
+    <link rel="stylesheet" href="css/bookDetails.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <h1 class="header-title">THE BOOK HUB</h1>
+    </header>
+    <div id="book-details">
+        <input type="text" id="book_id">
+        <input type="text" id="book_title">
+        <input type="number" id="book_quantity">
+        <input type="text" id="book_price">
+    </div>
+    <div class="purchase-container">
+        <h1>Purchase Item</h1>
+        <form id="purchase-form" action="/path/to/submit" method="post">
+            <div class="form-group">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" name="item_name" readonly>
+            </div>
+            <div class="form-group">
+                <label for="item-price">Price:</label>
+                <input type="text" id="item-price" name="item_price" readonly>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="total-price">Total Price:</label>
+                <input type="text" id="total-price" name="total_price" readonly>
+            </div>
+            <div class="form-group">
+                <label for="shipping-address">Shipping Address:</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="city" name="city" placeholder="City" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="zone" name="zone" placeholder="Zone" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="shipping-address" name="shipping_address" placeholder="Street Address" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="buildingNO" name="buildingNO" placeholder="Building NO" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment_method" required>
+                    <option value="">Select a payment method</option>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank_transfer">Bank Transfer</option>
+                    <option value="monyBalance">Mony Balance</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-submit">Confirm Purchase</button>
+        </form>
+    </div>
+    <script src="js/purchase.js"></script>
+</body>
+</html>

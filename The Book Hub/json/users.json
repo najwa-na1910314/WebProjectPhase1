@@ -1,26 +1,28 @@
 [
-    {
-      "type": "customer",
-      "name": "Fatima",
-      "surname": "Mohammed",
-      "shippingAddress": " Doha 123 Main St",
-      "username": "fa12345",
-      "password": "fa12345",
-      "moneyBalance": 500.00
-    },
-    {
-      "type": "seller",
-      "name": "Fatima",
-      "companyName": "Acme Inc",
-      "username": "acmeseller",
-      "password": "password2",
-      "bankAccount": "123456789"
-    },
-    {
-      "type": "admin",
-      "name": "Fatima",
-      "username": "admin",
-      "password": "adminpass"
-    }
-  ]
-  
+  {
+    "userid": 1,
+    "type": "customer",
+    "name": "Fatima",
+    "surname": "Mohammed",
+    "shippingAddress": " Doha 123 Main St",
+    "username": "fa12345",
+    "password": "fa12345",
+    "moneyBalance": 500.0
+  },
+  {
+    "userid": 2,
+    "type": "seller",
+    "name": "Fatima",
+    "companyName": "Acme Inc",
+    "username": "acmeseller",
+    "password": "password2",
+    "bankAccount": "123456789"
+  },
+  {
+    "userid": 3,
+    "type": "admin",
+    "name": "Fatima",
+    "username": "admin",
+    "password": "adminpass"
+  }
+]
