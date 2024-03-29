@@ -10,6 +10,7 @@
     },
     {
       "type": "seller",
+      "name": "Fatima",
       "companyName": "Acme Inc",
       "username": "acmeseller",
       "password": "password2",
@@ -17,6 +18,7 @@
     },
     {
       "type": "admin",
+      "name": "Fatima",
       "username": "admin",
       "password": "adminpass"
     }
