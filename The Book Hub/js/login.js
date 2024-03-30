@@ -20,13 +20,13 @@ async function user_login(username, password) {
   } else {
     localStorage.setItem("user_data", JSON.stringify(user));
     if (user["type"] == "customer") {
-      window.location.href = "index.html";
+      window.location.href = "main.html";
     }
     if (user["type"] == "seller") {
-      window.location.href = "seller/index.html";
+      window.location.href = "seller/main.html";
     }
     if (user["type"] == "admin") {
-      window.location.href = "admin/index.html";
+      window.location.href = "admin/main.html";
     }
     //return data
   }
