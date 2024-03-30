@@ -78,12 +78,12 @@ body {
         display: flex;
         position: absolute;
         color: white;
-        left: 9%;
+        left: 12%;
         top: 35%;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
         transform: translate(-60%, 0%);
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .text-2 {
