@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase Item</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/uploadBook.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-title-container">
+          <img src="../image/logo.png" alt="Logo" class="logo" />
+          <h1 class="title">
+            <span class="green">THE</span> BOOK <span class="green">HUB</span>
+          </h1>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="/main.html">Home</a></li>
+          <li><a href="/seller/sellerOrder.html">Order History</a></li>
+          <li><a href="/seller/sellBook.html">Sell Book</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--All Seller Fucntionaly is done in this page-->
+    <h1>Seller Page</h1>
+    <h5 id="item_counter">Total Items:</h5>
+    <main class="main-section">
+      <div class="sell_container">
+        <h2>Sell a Book:</h2>
+
+        <form id="add_book_form">
+          <div class="grid-container">
+            <label for="price">Price:</label>
+            <input type="text" id="price" placeholder="Enter Price" required />
+            <label for="quantity">Quantity:</label>
+            <input
+              type="number"
+              id="quantity"
+              placeholder="Enter Quantity"
+              required
+            />
+            <label for="isbn">isbn:</label
+            ><input
+              type="text"
+              id="isbn"
+              placeholder="Enter Book isbn"
+              required
+            />
+            <label for="title">Title:</label
+            ><input
+              type="text"
+              id="title"
+              placeholder="Enter Book Name"
+              required
+            />
+
+            <label for="categories">categories:</label
+            ><input
+              type="text"
+              id="categories"
+              placeholder="Enter Book categories"
+              required
+            />
+
+            <label for="status">status:</label
+            ><input
+              type="text"
+              id="status"
+              placeholder="Enter Book status"
+              required
+            />
+            <label for="image">Image:</label>
+            <input
+              type="text"
+              id="image"
+              placeholder="Enter Image URL"
+              required
+            />
+            <input type="submit" value="Add Book" id="add" />
+          </div>
+        </form>
+      </div>
+
+      <div class="show_history">
+        <h2>View Sale Items (History)</h2>
+
+        <div class="sale_item_container">
+          <h4>Nothing on Sale.</h4>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/js/sellBook.js" type="module"></script>
+</html>

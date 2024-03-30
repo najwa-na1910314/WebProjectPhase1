@@ -104,7 +104,6 @@ async function buyBook(bookId) {
 }
 
 function toHTML(book) {
-  //completed
   return `
         <div class="book-card">
         <img src="${book.thumbnailUrl}" class="card-image"></img>

@@ -23,7 +23,7 @@ async function user_login(username, password) {
       window.location.href = "main.html";
     }
     if (user["type"] == "seller") {
-      window.location.href = "seller/main.html";
+      window.location.href = "seller/sellBook.html";
     }
     if (user["type"] == "admin") {
       window.location.href = "admin/main.html";

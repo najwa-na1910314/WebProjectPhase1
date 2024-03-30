@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase Item</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/sellBook.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-title-container">
+          <img src="../image/logo.png" alt="Logo" class="logo" />
+          <h1 class="title">
+            <span class="green">THE</span> BOOK <span class="green">HUB</span>
+          </h1>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="/main.html">Home</a></li>
+          <li><a href="/login.html">Login</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="main-content">
+      <div class="books" id="books">
+        <h1 id="pageheading"></h1>
+        <table id="order_data">
+          <tr>
+            <th>Order No</th>
+            <th>ISBN</th>
+            <th>Book Name</th>
+            <th>Unite Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <script>
+      function loadUserOrders() {
+        let orderHistory = localStorage.getItem("orderHistory");
+        let user_data = JSON.parse(localStorage.getItem("user_data"));
+        console.log(user_data);
+        if (orderHistory != null) {
+          orderHistory = JSON.parse(localStorage.getItem("orderHistory"));
+
+          showOrders(orderHistory);
+        } else {
+          console.log("this user dosnt have any orders");
+        }
+      }
+      loadUserOrders();
+      function showOrders(userOrders) {
+        let ele = document.getElementById("order_data");
+
+        userOrders.forEach((user_order) => {
+          let book_data = getBookData(user_order["book_id"]);
+          console.log("the data is");
+          console.log(book_data);
+          /*
+            <td>${book_data["model"]}</td>
+            <td>${book_data["make"]}</td>
+            <td>${book_data["price"]}</td>
+     
+*/
+          ele.innerHTML += `
+          <tr>
+            <td>${user_order["order_id"]}</td>
+            <td>${book_data["isbn"]}</td>
+            <td>${book_data["title"]}</td>
+            <td>${book_data["price"]}</td>
+
+            <td>${user_order["quantity"]}</td>
+            <td>$${user_order["total_cost"]}</td>
+          </tr>
+        `;
+        });
+      }
+
+      function getBookData(book_id) {
+        let book_list = JSON.parse(localStorage.getItem("books"));
+        let book_data = book_list.filter((book) => book["_id"] == book_id);
+
+        return book_data[0];
+      }
+    </script>
+  </body>
+</html>
