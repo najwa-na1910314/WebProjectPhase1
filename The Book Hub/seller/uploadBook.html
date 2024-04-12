@@ -23,10 +23,9 @@
 
       <nav class="menu">
         <ul>
-          <li><a href="/main.html">Home</a></li>
-          <li><a href="/seller/sellerOrder.html">Order History</a></li>
-          <li><a href="/seller/sellBook.html">Sell Book</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="sellerOrder.html">Order History</a></li>
+          <li><a href="uploadBook.html">Sell Book</a></li>
         </ul>
       </nav>
     </header>
@@ -36,10 +35,15 @@
     <h5 id="item_counter">Total Items:</h5>
     <main class="main-section">
       <div class="sell_container">
+        <select name="" id="book_drop_down">
+          <option value="">Select book ID</option>
+        </select>
         <h2>Sell a Book:</h2>
 
         <form id="add_book_form">
           <div class="grid-container">
+            <label for="bookId">Book ID:</label>
+            <input type="number" name="" id="bid" readonly>
             <label for="price">Price:</label>
             <input type="text" id="price" placeholder="Enter Price" required />
             <label for="quantity">Quantity:</label>
@@ -86,6 +90,38 @@
               placeholder="Enter Image URL"
               required
             />
+            <label for="pageCount">Page Count:</label>
+            <input
+              type="number"
+              id="pageCount"
+              placeholder="Enter number of pages"
+              required
+            />
+            <label for="authors">Authors:</label>
+            <input
+              type="text"
+              id="authors"
+              placeholder="Enter authors separated by commas"
+              required
+            />
+            <label for="date">Enter released date:</label>
+            <input
+              type="date"
+              id="date"
+              required
+            />
+            <label for="short_desc">Short description:</label>
+            <input
+              type="text"
+              id="short_desc"
+              placeholder="Enter summary of the book"
+              required
+            />
+            <label for="long_desc">Long description:</label>
+            <textarea id="long_desc"
+              placeholder="Enter detailed description of the book"
+              required></textarea>
+
             <input type="submit" value="Add Book" id="add" />
           </div>
         </form>
@@ -100,5 +136,5 @@
       </div>
     </main>
   </body>
-  <script src="/js/uploadBook.js" type="module"></script>
+  <script src="../js/sellBook.js"></script>
 </html>

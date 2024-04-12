@@ -1,20 +1,20 @@
 [
   {
-    "_id": 198,
-    "title": "Eleanor & Park",
-    "isbn": "1933988819",
-    "pageCount": 304,
+    "_id": 198, 
+    "title": "Eleanor & Park", 
+    "isbn": "1933988819", 
+    "pageCount": 304, 
     "publishedDate": {
       "$date": "2009-09-09T00:00:00.000-0700"
-    },
+    }, 
     "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/en/5/54/Eleanor_park_book_cover.jpg",
     "shortDescription": "SharePoint 2007 Developer's Guide to Business Data Catalog is a practical, example-rich guide to the features of the BDC and the techniques you need to build solutions for end users. The book starts with the basics   what the BDC is, what you can do with it, and how to pull together a BDC solution. With the fundamentals in hand, it explores the techniques and ideas you need to put BDC into use effectively in your organization.",
     "longDescription": "The data locked in your organization's systems and databases is a precious   and sometimes untapped   resource. The SharePoint Business Data Catalog makes it easy to gather, analyze, and report on data from multiple sources, through SharePoint. Using standard web parts, an efficient management console, and a simple programming model, you can build sites, dashboards, and applications that maximize this business asset.    SharePoint 2007 Developer's Guide to Business Data Catalog is a practical, example-rich guide to the features of the BDC and the techniques you need to build solutions for end users. The book starts with the basics   what the BDC is, what you can do with it, and how to pull together a BDC solution. With the fundamentals in hand, it explores the techniques and ideas you need to put BDC into use effectively in your organization.    Knowledge of SharePoint Server and WSS is required.    WHAT'S INSIDE        * The BDC Object Model      * How to build BDC applications      * BDC-driven search      * Integrating with Office, CRM, and InfoPath",
-    "status": "AVAILABLE",
-    "authors": ["Rainbow Rowell"],
-    "categories": ["Young-adult Fiction"],
-    "quantity": 10,
-    "price": 40
+    "status": "AVAILABLE", 
+    "authors": ["Rainbow Rowell"], 
+    "categories": ["Young-adult Fiction"], 
+    "quantity": 10, 
+    "price": 40 
   },
   {
     "_id": 199,
@@ -218,7 +218,7 @@
     "longDescription": "Today, to meet the surging demands of client/server company-wide processes--distributed cooperative computing, business/scientific imaging, video conferencing, multimedia, distance learning and many more--corporations are finding they must extend high-speed communications beyond just a few key sites. This book discusses ATM as the key technology for transforming the enterprise network from data-only to an integrated data, voice, video, image and multimedia corporate infrastructure.    Previous books have covered ATM and client/server separately. This book, intended for networking professionals, is unique in its focus on the hows and whys of the inevitable marriage of these two technologies.",
     "status": "PUBLISH",
     "authors": ["J.K. Rowling"],
-    "categories": ["Fantasy"],
+    "categories": ["Fantasy", "Adventure"],
     "quantity": 220,
     "price": 48
   },
@@ -278,7 +278,7 @@
     "price": 43
   },
   {
-    "_id": 226,
+    "_id": 227,
     "title": "The Kite Runner",
     "isbn": "1617290149",
     "pageCount": 300,
@@ -297,7 +297,7 @@
     "price": 59
   },
   {
-    "_id": 226,
+    "_id": 228,
     "title": "A Thousand Splendid Suns",
     "isbn": "1617290149",
     "pageCount": 300,
@@ -316,7 +316,7 @@
     "price": 62
   },
   {
-    "_id": 226,
+    "_id": 229,
     "title": "The Haunting of Hill House",
     "isbn": "1617290149",
     "pageCount": 300,
@@ -335,7 +335,7 @@
     "price": 48
   },
   {
-    "_id": 226,
+    "_id": 230,
     "title": "Bird Box",
     "isbn": "1617290149",
     "pageCount": 300,

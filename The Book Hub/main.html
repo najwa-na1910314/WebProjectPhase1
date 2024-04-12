@@ -10,6 +10,7 @@
     <header>
       <div class="header-content">
         <div class="search-container">
+          <p id="user_welcome"></p>
           <input type="text" placeholder="Search" class="search-box" />
           <button type="submit" class="search-button">
             <img src="image/searchIcon.png" alt="search" class="search-icon" />
@@ -23,10 +24,7 @@
           </h1>
         </div>
 
-        <div>
-          <a href="main.html">Home</a>
-          <a href="login.html">Login</a>
-        </div>
+        
       </div>
 
       <img src="image/banner-img.jpg" alt="banner-img" class="banner-img" />
@@ -34,11 +32,9 @@
             <div class="text-2">where stories unfold!</div>
 
       <nav class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul id="menu_links">
+          <li><a href="main.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -62,5 +58,45 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+      function checkLogStatus(){
+        if(localStorage.getItem("user_data")!=null){
+          let ele = document.getElementById("menu_links")
+          ele.innerHTML = ""
+          let user_type = JSON.parse(localStorage.getItem("user_data"))["type"]
+          if(user_type=="customer"){
+            ele.innerHTML+=`
+            <li><a href="main.html">Home</a></li>
+            <li><a href="customerOrder.html">Order History</a></li>
+            <li><button onclick="logoutUser()">Logout</button></li>
+          `
+          ele = document.getElementById("user_welcome")
+          ele.innerHTML = `
+            	Welcome, ${JSON.parse(localStorage.getItem("user_data"))["name"]}
+          `
+          return 
+          }
+          if(user_type=="seller"){
+            ele.innerHTML+=`
+            <li><a href="main.html">Home</a></li>
+            <li><a href="seller/sellerOrder.html">Customer's Order History</a></li>
+            <li><a href="seller/uploadBook.html">Sell/Update Book</a></li>
+            <li><button onclick="logoutUser()">Logout</button></li>
+          `
+          ele = document.getElementById("user_welcome")
+          ele.innerHTML = `
+            	Welcome, ${JSON.parse(localStorage.getItem("user_data"))["name"]}
+          `
+          return 
+          }
+        }
+      }
+      checkLogStatus()
+
+      function logoutUser(){
+        localStorage.removeItem("user_data")
+        window.location.href = "main.html"
+      }
+    </script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 //(display model + make drop downs)
 //const modelDD = document.querySelector("#models")
-
+/*
 import { Book } from "../classes/Book.js";
 
 const addButton = document.querySelector("#add");
@@ -120,7 +120,158 @@ async function loadSellerSales() {
       ` | On Sale Items: ` +
       onSaleItemCounter;
   }
-}
-window.addEventListener("DOMContentLoaded", function (event) {
-  loadSellerSales();
+}*/
+window.addEventListener("DOMContentLoaded", async function (event) {
+  let booklist = JSON.parse(localStorage.getItem("books"))
+  let ele1 = document.getElementById("book_drop_down")
+  ele1.addEventListener("change", ()=>{
+    let selectedBookId = ele1.value
+    // show call book info
+    if(ele1.value!=""){
+      showBookInfo(selectedBookId)
+    } else {
+      document.getElementById("bid").value = ""
+    document.getElementById("isbn").value = ""
+    document.getElementById("title").value = ""
+    document.getElementById("quantity").value = ""
+    document.getElementById("price").value = ""
+    document.getElementById("categories").value = ""
+    document.getElementById("status").value = ""
+    document.getElementById("image").value = ""
+    }
+    
+  })
+
+  let ele2 = document.getElementById("add")
+  ele2.addEventListener("click", (event)=>{
+    event.preventDefault()
+    let ele3 = document.getElementById("bid")
+    if(ele3.value==""){
+      console.log("Add a new book");
+      addBook()
+    } else{
+      console.log("Update book info");
+      updateBook()
+    }
+  })
+
+  
+
+  function loadBookIds(){
+    console.log("Hello");
+    booklist.forEach(book => {
+      ele1.innerHTML+=`
+      <option value="${book["_id"]}">${book["title"]}</option>
+      `
+    });
+  }
+
+  function showBookInfo(selectedBookId){
+    if(selectedBookId!=""){
+      console.log("Update book");
+      let selectedBookIndex = findBookById(selectedBookId)
+      fillFields(selectedBookIndex)
+    } else {
+      console.log("Add a new book");
+    }
+  }
+
+  function findBookById(selectedBookId){
+    return booklist.findIndex((book)=> book["_id"]==selectedBookId)
+  }
+
+  function fillFields(bookIndex){
+    document.getElementById("bid").value = booklist[bookIndex]["_id"]
+    document.getElementById("isbn").value = booklist[bookIndex]["isbn"]
+    document.getElementById("title").value = booklist[bookIndex]["title"]
+    document.getElementById("quantity").value = booklist[bookIndex]["quantity"]
+    document.getElementById("price").value = booklist[bookIndex]["price"]
+    document.getElementById("categories").value = booklist[bookIndex]["categories"].toString()
+    document.getElementById("status").value = booklist[bookIndex]["status"]
+    document.getElementById("image").value = booklist[bookIndex]["thumbnailUrl"]
+
+    document.getElementById("pageCount").value = booklist[bookIndex]["pageCount"]
+    document.getElementById("authors").value = booklist[bookIndex]["authors"].toString()
+    let unformatD = new Date(booklist[bookIndex]["publishedDate"]["$date"])
+    let formattedD = unformatD.toISOString().slice(0,10)
+    document.getElementById("date").value = formattedD
+    document.getElementById("short_desc").value = booklist[bookIndex]["shortDescription"]
+    document.getElementById("long_desc").value = booklist[bookIndex]["longDescription"]
+    
+  }
+
+  function updateBook(){
+    let bid = parseInt(document.getElementById("bid").value)
+    let bookIndex = findBookById(bid)
+     /*= booklist[bookIndex]["_id"]
+     = booklist[bookIndex]["isbn"]
+     = booklist[bookIndex]["title"]
+     = booklist[bookIndex]["quantity"]
+     = booklist[bookIndex]["price"]
+     = booklist[bookIndex]["categories"].toString()
+     = booklist[bookIndex]["status"]
+     = booklist[bookIndex]["thumbnailUrl"]
+
+     = booklist[bookIndex]["pageCount"]
+     = booklist[bookIndex]["authors"].toString()
+    let unformatD = new Date(booklist[bookIndex]["publishedDate"]["$date"])
+    let formattedD = unformatD.toISOString().slice(0,10)
+     = formattedD
+     = booklist[bookIndex]["shortDescription"]
+     = booklist[bookIndex]["longDescription"]*/
+    let newBook = {
+      _id: document.getElementById("bid").value,
+    title: document.getElementById("title").value,
+    isbn: document.getElementById("isbn").value,
+    pageCount: document.getElementById("pageCount").value,
+    publishedDate: {
+      $date: document.getElementById("date").value
+    },
+    thumbnailUrl: document.getElementById("image").value,
+    shortDescription: document.getElementById("short_desc").value,
+    longDescription: document.getElementById("long_desc").value,
+    status: document.getElementById("status").value,
+    authors: document.getElementById("authors").value.split(","),
+    categories: document.getElementById("categories").value.split(","),
+    quantity: document.getElementById("quantity").value,
+    price: document.getElementById("price").value
+    }
+    console.log(newBook);
+    booklist[bookIndex] = newBook
+    localStorage.setItem("books", JSON.stringify(booklist))
+  }
+
+  function generateBookId(){ // sorts the book from largest to the smallest based on the book id
+    let sortedBooks = booklist.sort((fbook, sbook)=> sbook["_id"] - fbook["_id"])
+    let maxId = parseInt(sortedBooks[0]["_id"])
+    console.log(maxId);
+    return maxId+1
+  }
+
+  function addBook(){
+    let newBookId = generateBookId()
+    let newBook = {
+      _id: newBookId,
+    title: document.getElementById("title").value,
+    isbn: document.getElementById("isbn").value,
+    pageCount: document.getElementById("pageCount").value,
+    publishedDate: {
+      $date: document.getElementById("date").value
+    },
+    thumbnailUrl: document.getElementById("image").value,
+    shortDescription: document.getElementById("short_desc").value,
+    longDescription: document.getElementById("long_desc").value,
+    status: document.getElementById("status").value,
+    authors: document.getElementById("authors").value.split(","),
+    categories: document.getElementById("categories").value.split(","),
+    quantity: document.getElementById("quantity").value,
+    price: document.getElementById("price").value
+    }
+    console.log(newBook);
+    booklist.unshift(newBook)
+    localStorage.setItem("books", JSON.stringify(booklist))
+  }
+
+  loadBookIds()
+  
 });

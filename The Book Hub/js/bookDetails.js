@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", async () => {
   //completed
   var bookId = window.location.href.split("=")[1];
+  let booklist
+  let bookIndex
+  let user_data
 
   if (bookId != null || bookId != "") {
     //let bookIndex = findBookIndex(bookId)
     //let bookIndex = booklist.findIndex((book)=>book["_id"]==bookId)
     //console.log(bookIndex)
-    let booklist = JSON.parse(localStorage.getItem("books"));
-    let bookIndex = booklist.findIndex((book) => book["_id"] == bookId);
+    booklist = JSON.parse(localStorage.getItem("books"));
+    bookIndex = booklist.findIndex((book) => book["_id"] == bookId);
     if (bookIndex != -1) {
       fillData(booklist[bookIndex]);
     } else {
@@ -19,28 +22,42 @@ document.addEventListener("DOMContentLoaded", async () => {
   buybtn.addEventListener("click", (event) => {
     event.preventDefault();
     let orderHistory = localStorage.getItem("orderHistory");
-    let user_data = JSON.parse(localStorage.getItem("user_data"));
+    user_data = JSON.parse(localStorage.getItem("user_data"));
 
     let quantity = parseInt(document.getElementById("book_quantity").value);
     let book_price = parseFloat(document.getElementById("book_price").value);
 
     let total_cost = quantity * book_price;
-    let orderData = {
-      book_id: bookId,
-      user_id: parseInt(user_data["userid"]),
-      quantity: document.getElementById("book_quantity").value,
-      total_cost: total_cost,
-    };
-    if (orderHistory == null) {
-      orderHistory = [];
-    } else {
-      orderHistory = JSON.parse(localStorage.getItem("orderHistory"));
+    if(parseInt(user_data["moneyBalance"])>=total_cost){
+      let orderData = {
+        book_id: bookId,
+        user_id: parseInt(user_data["userid"]),
+        quantity: document.getElementById("book_quantity").value,
+        total_cost: total_cost,
+      };
+      if (orderHistory == null) {
+        orderHistory = [];
+      } else {
+        orderHistory = JSON.parse(localStorage.getItem("orderHistory"));
+      }
+      orderData["order_id"] = orderHistory.length + 1;
+  
+      orderHistory.push(orderData);
+  
+      localStorage.setItem("orderHistory", JSON.stringify(orderHistory));
+      booklist[bookIndex]["quantity"] = parseInt(booklist[bookIndex]["quantity"])-quantity
+      localStorage.setItem("books", JSON.stringify(booklist));
+      user_data["moneyBalance"] = parseInt(user_data["moneyBalance"]) - total_cost
+      localStorage.setItem("user_data",JSON.stringify(user_data))
     }
-    orderData["order_id"] = orderHistory.length + 1;
-
-    orderHistory.push(orderData);
-
-    localStorage.setItem("orderHistory", JSON.stringify(orderHistory));
+    else{
+      let balanceError = document.getElementById("balance_error")
+      balanceError.innerHTML = ""
+      balanceError.innerHTML += `
+        Insufficient Balance, ${user_data["name"]}
+        Has only ${user_data["moneyBalance"]}
+      `
+    }
   });
 });
 

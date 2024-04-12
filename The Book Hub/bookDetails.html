@@ -8,14 +8,24 @@
   </head>
   <body>
     <header class="site-header">
+      <p id="user_welcome"></p>
       <div class="header-logo">
         <img src="image/logo.png" alt="Logo" />
       </div>
       <h1 class="header-title">THE BOOK HUB</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+            <li><a href="customerOrder.html">Order History</a></li>
+            <li><button onclick="logoutUser()">Logout</button></li>
+        </ul>
+      </nav>
     </header>
+    
 
     <div class="purchase-container">
       <h1>Purchase Item</h1>
+      <p id="balance_error"></p>
       <form id="purchase-form" action="/path/to/submit" method="post">
         <div class="form-group">
           <label for="item-name">Book ID:</label>
@@ -89,5 +99,16 @@
       </form>
     </div>
     <script src="js/bookDetails.js"></script>
+    <script>
+      let ele = document.getElementById("user_welcome")
+      ele.innerHTML = 
+      `
+        Welcome, ${JSON.parse(localStorage.getItem("user_data"))["name"]}
+      `
+      function logoutUser(){
+        localStorage.removeItem("user_data")
+        window.location.href = "main.html"
+      }
+    </script>
   </body>
 </html>

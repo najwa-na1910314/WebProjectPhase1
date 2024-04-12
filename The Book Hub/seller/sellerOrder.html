@@ -19,14 +19,15 @@
             <span class="green">THE</span> BOOK <span class="green">HUB</span>
           </h1>
         </div>
+        <p id="user_welcome"></p>
       </div>
 
       <nav class="menu">
         <ul>
           <li><a href="/main.html">Home</a></li>
           <li><a href="sellerOrder.html">Order History</a></li>
-          <li><a href="sellBook.html">Sell Book</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="uploadBook.html">Sell/Update Book</a></li>
+          <li><button onclick="LogoutUser()">Logout</button></li>
         </ul>
       </nav>
     </header>
@@ -37,6 +38,7 @@
         <table id="order_data">
           <tr>
             <th>Order No</th>
+            <th>User ID</th>
             <th>ISBN</th>
             <th>Book Name</th>
             <th>Unite Price</th>
@@ -72,6 +74,7 @@
           ele.innerHTML += `
           <tr>
             <td>${user_order["order_id"]}</td>
+            <td>${user_order["user_id"]}</td>
             <td>${book_data["isbn"]}</td>
             <td>${book_data["title"]}</td>
             <td>${book_data["price"]}</td>
@@ -88,6 +91,17 @@
         let book_data = book_list.filter((book) => book["_id"] == book_id);
 
         return book_data[0];
+      }
+    </script>
+    <script>
+      let ele = document.getElementById("user_welcome")
+      ele.innerHTML = 
+      `
+        Welcome, ${JSON.parse(localStorage.getItem("user_data"))["name"]}
+      `
+      function logoutUser(){
+        localStorage.removeItem("user_data")
+        window.location.href = "../main.html"
       }
     </script>
   </body>
