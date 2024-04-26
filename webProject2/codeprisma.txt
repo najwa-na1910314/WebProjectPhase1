@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+model Catagory {
+  catagory_id Int @id @default(autoincrement())
+  catagory_name String
+  books Book[]
+}
+model Book{
+  book_id Int @id @default(autoincrement())
+  book_title String
+  isbn String
+  stock Int
+  image String
+  buplish_date DateTime
+  short_description String
+  long_description String
+  unit_price Decimal
+  catagories Catagory[]
+}
+model BookCatagory{
+  book_catagory_id Int @id @default(autoincrement())
+  book_id_fk Int 
+  catagory_id_fk Int
+  books Book @relation(fields: [book_id_fk],references: [book_id])
+  catagories Catagory @relation(fields: [catagory_id_fk],references: [catagory_id])
+}
+DATABASE_URL="mysql://root@localhost:3306/project2"
