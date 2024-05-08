@@ -1,0 +1,94 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+// completed
+model Catagory {
+  catagory_id   Int            @id @default(autoincrement())
+  catagory_name String
+  bookcatagory  BookCatagory[]
+}
+// completed
+model Book {
+  book_id           Int            @id @default(autoincrement())
+  book_title        String
+  isbn              String
+  stock             Int
+  image             String
+  buplish_date      DateTime
+  short_description String
+  long_description  String
+  unit_price        Decimal
+  bookcatagory      BookCatagory[]
+  bookAuthor        BookAuthor[]
+  order             Order[]
+}
+// completed
+model Author {
+  author_id  Int          @id
+  first_name String
+  last_name  String
+  bookAuthor BookAuthor[]
+}
+// completed
+model UserAccount {
+  user_id      Int           @id @default(autoincrement())
+  user_name    String
+  password     String
+  first_name   String
+  last_name    String
+  account_type String
+  order        Order[]
+  bankAccount  BankAccount[]
+  shipping     Shipping[]
+}
+// completed
+model Shipping {
+  shipping_id  Int         @id @default(autoincrement())
+  country      String
+  city         String
+  street_no    String
+  building_no  Int
+  user_id_fk   Int
+  useraccounts UserAccount @relation(fields: [user_id_fk], references: [user_id])
+}
+// completed
+model BankAccount {
+  bank_account_id Int         @id @default(autoincrement())
+  balance         Decimal
+  account_No      Int
+  user_id_fk      Int
+  useraccounts    UserAccount @relation(fields: [user_id_fk], references: [user_id])
+}
+// completed
+model Order {
+  order_id      Int         @id @default(autoincrement())
+  book_quantity Int
+  book_id_fk    Int
+  user_id_fk    Int
+  books         Book        @relation(fields: [book_id_fk], references: [book_id])
+  users         UserAccount @relation(fields: [user_id_fk], references: [user_id])
+}
+// completed
+model BookCatagory {
+  book_catagory_id Int      @id @default(autoincrement())
+  book_id_fk       Int
+  catagory_id_fk   Int
+  books            Book     @relation(fields: [book_id_fk], references: [book_id])
+  catagories       Catagory @relation(fields: [catagory_id_fk], references: [catagory_id])
+}
+// completed
+model BookAuthor {
+  book_author_id Int    @id @default(autoincrement())
+  author_id_fk   Int
+  book_id_fk     Int
+  books          Book   @relation(fields: [book_id_fk], references: [book_id])
+  author         Author @relation(fields: [author_id_fk], references: [author_id])
+}

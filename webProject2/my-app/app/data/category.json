@@ -1,0 +1,19 @@
+[
+    {
+        "catagory_id":1,
+        "catagory_name":"Adventure"
+    },
+    {
+        "catagory_id":2,
+        "catagory_name":"Science"
+    },
+    {
+        "catagory_id":3,
+        "catagory_name":"Action"
+    },
+    {
+        "catagory_id":4,
+        "catagory_name":"Romance"
+    }
+
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "book_catagory_id": 1,
+        "book_id_fk": 1,
+        "catagory_id_fk": 1
+    },
+    {
+        "book_catagory_id": 2,
+        "book_id_fk": 1,
+        "catagory_id_fk": 2
+    },
+    {
+        "book_catagory_id": 3,
+        "book_id_fk": 1,
+        "catagory_id_fk": 3
+    },
+    {
+        "book_catagory_id": 4,
+        "book_id_fk": 2,
+        "catagory_id_fk": 2
+    },
+    {
+        "book_catagory_id": 5,
+        "book_id_fk": 3,
+        "catagory_id_fk": 4
+    },
+    {
+        "book_catagory_id": 6,
+        "book_id_fk": 4,
+        "catagory_id_fk": 2
+    },
+    {
+        "book_catagory_id": 7,
+        "book_id_fk": 5,
+        "catagory_id_fk": 3
+    }
+]
