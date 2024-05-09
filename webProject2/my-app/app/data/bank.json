@@ -1,0 +1,14 @@
+[
+    {
+        "bank_account_id": 1,
+        "balance": 10000,
+        "account_No": 100,
+        "user_id_fk": 1
+    },
+    {
+        "bank_account_id": 2,
+        "balance": 135000,
+        "account_No": 200,
+        "user_id_fk": 4
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "shipping_id": 1,
+        "country": "Qatar",
+        "city": "Doha",
+        "street_no": "100",
+        "building_no": 50,
+        "user_id_fk": 1
+    },
+    {
+        "shipping_id": 2,
+        "country": "Qatar",
+        "city": "Al-Wakra",
+        "street_no": "240",
+        "building_no": 12,
+        "user_id_fk": 1
+    },
+    {
+        "shipping_id": 3,
+        "country": "Qatar",
+        "city": "Al-Shammal",
+        "street_no": "23",
+        "building_no": 67,
+        "user_id_fk": 1
+    }
+]

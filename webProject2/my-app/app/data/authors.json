@@ -1,0 +1,52 @@
+[
+    {
+        "author_id": 100,
+        "first_name": "Alexandre",
+        "last_name": "Alves"
+    },
+    {
+        "author_id": 101,
+        "first_name": "Christian",
+        "last_name": "Bauer"
+    },
+    {
+        "author_id": 102,
+        "first_name": "Clinton",
+        "last_name": "Begin"
+    },
+    {
+        "author_id": 103,
+        "first_name": "Emmanuel",
+        "last_name": "Bernard"
+    },
+    {
+        "author_id": 104,
+        "first_name": "David",
+        "last_name": "Sean Taylor"
+    },
+    {
+        "author_id": 105,
+        "first_name": "Paul",
+        "last_name": "S. Randal"
+    },
+    {
+        "author_id": 106,
+        "first_name": "Daniele",
+        "last_name": "Bochicchio"
+    },
+    {
+        "author_id": 107,
+        "first_name": "Anthony",
+        "last_name": "Williams"
+    },
+    {
+        "author_id": 108,
+        "first_name": "Christopher",
+        "last_name": "Allen"
+    },
+    {
+        "author_id": 109,
+        "first_name": "Chad",
+        "last_name": "A. Campbell"
+    }
+]
