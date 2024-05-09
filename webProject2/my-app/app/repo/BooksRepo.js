@@ -9,6 +9,63 @@ class BooksRepo {
     return await prisma.book.findMany(); // get all books from the db
   }
 
+  async getBookById(book_id) {
+    // get book info by its id
+    return await prisma.book.findUnique({
+      where: { book_id: book_id },
+    });
+  }
+
+  async getBooksByName(bookName) {
+    // for search in phase 1
+    if (!bookName || typeof bookName !== "string") {
+      throw new Error("Invalid book name");
+    }
+    return await prisma.book.findMany({
+      where: { book_title: { contains: bookName.toLowerCase() } },
+    });
+  }
+
+  async getBooksByAuthor(authorName) {
+    if (!authorName || typeof authorName !== "string") {
+      throw new Error("Author not found");
+    }
+    const author = await prisma.author.findFirst({
+      where: {
+        OR: [
+          {
+            first_name: authorName,
+          },
+          { last_name: authorName },
+          {
+            AND: [
+              {
+                first_name: authorName.split(" ")[0],
+              },
+              {
+                last_name: authorName.split(" ")[1],
+              },
+            ],
+          },
+          {
+            AND: [
+              {
+                first_name: authorName.split(" ")[1],
+              },
+              {
+                last_name: authorName.split(" ")[0],
+              },
+            ],
+          },
+        ],
+      },
+    });
+    /*const books = await prisma.book.findMany({
+      where: { author_id: author.author_id },
+    });
+    return books;*/
+  }
+
   /*async getBooksByName(bookName) {
     if (!bookName || typeof bookName !== "string") {
       throw new Error("Invalid book name");
@@ -35,26 +92,26 @@ class BooksRepo {
       where: {
         OR: [
           {
-            firstName: authorName,
+            first_name: authorName,
           },
-          { lastName: authorName },
+          { last_name: authorName },
           {
             AND: [
               {
-                firstName: authorName.split(" ")[0],
+                first_name: authorName.split(" ")[0],
               },
               {
-                lastName: authorName.split(" ")[1],
+                last_name: authorName.split(" ")[1],
               },
             ],
           },
           {
             AND: [
               {
-                firstName: authorName.split(" ")[1],
+                first_name: authorName.split(" ")[1],
               },
               {
-                lastName: authorName.split(" ")[0],
+                last_name: authorName.split(" ")[0],
               },
             ],
           },
@@ -82,8 +139,8 @@ class BooksRepo {
       },
       select: {
         authorId: true,
-        firstName: true,
-        lastName: true,
+        first_name: true,
+        last_name: true,
       },
     });
     let summaryWithNames = summary.map((item) => {
@@ -91,7 +148,7 @@ class BooksRepo {
       return {
         ...item,
         author: author
-          ? { firstName: author.firstName, lastName: author.lastName }
+          ? { first_name: author.first_name, last_name: author.last_name }
           : null,
       };
     });
@@ -136,7 +193,6 @@ class BooksRepo {
       },
     });
   }*/
-
 
   /*#booksFilePath = path.join(process.cwd(), 'app/data/catalog-books.json');
 
