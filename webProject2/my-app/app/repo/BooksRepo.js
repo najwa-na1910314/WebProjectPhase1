@@ -6,10 +6,10 @@ const prisma = new PrismaClient();
 
 class BooksRepo {
   async getBooks() {
-    return await prisma.book.findMany();
+    return await prisma.book.findMany(); // get all books from the db
   }
 
-  async getBooksByName(bookName) {
+  /*async getBooksByName(bookName) {
     if (!bookName || typeof bookName !== "string") {
       throw new Error("Invalid book name");
     }
@@ -135,7 +135,7 @@ class BooksRepo {
         isbn: isbn,
       },
     });
-  }
+  }*/
 
 
   /*#booksFilePath = path.join(process.cwd(), 'app/data/catalog-books.json');
