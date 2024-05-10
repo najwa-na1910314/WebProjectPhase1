@@ -60,10 +60,54 @@ class BooksRepo {
         ],
       },
     });
-    /*const books = await prisma.book.findMany({
-      where: { author_id: author.author_id },
+    const books = await prisma.book.findMany({
+      where: {
+        bookAuthor: {
+          some: {
+            author_id_fk: author.author_id,
+          },
+        },
+      },
     });
-    return books;*/
+    //console.log(books);
+    return books;
+  }
+
+  async getBooksByCategory(category) {
+    if (!category || typeof category !== "string") {
+      throw new Error("Category not found");
+    }
+    const bookCat = await prisma.catagory.findFirst({
+      where: {
+        catagory_name: category,
+      },
+    });
+    const books = await prisma.book.findMany({
+      where: {bookcatagory: {
+        some:{
+          catagory_id_fk: bookCat.catagory_id
+        }
+      }}
+    })
+    //console.log(books);
+    return books;
+  }
+
+  async updateBook(book_id, updatedBook) {
+    console.log(updatedBook);
+    
+    return prisma.book.update({
+      data: updatedBook,
+      where: {
+        book_id: book_id,
+      },
+    });
+  }
+
+  async addBook(book){
+    return await prisma.book.create({
+      data: book
+    })
   }
 
   /*async getBooksByName(bookName) {
