@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+  
+  body header {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  body .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  body .logo-title-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  body .logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    padding-bottom: 10px;
+  }
+  
+  body .title {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  body .title .green {
+    color: #38b5b9;
+  }
+  
+  body .menu {
+    width: 100%;
+    text-align: center;
+    background-color: #38b5b9;
+  }
+  
+  body .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  body .menu ul li {
+    margin: 0 10px;
+  }
+  
+  body .menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  body .main-section {
+    padding: 20px;
+  }
+  
+  body .sell_container {
+    margin-bottom: 20px;
+  }
+  
+  body .show_history {
+    margin-bottom: 20px;
+  }
+  
+  body .main-content table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  body .main-content table tr th,
+  body .main-content table tr td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  body .sell_container form {
+    margin-bottom: 20px;
+  }
+  
+  body .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+  
+  body .grid-container label {
+    font-weight: bold;
+  }
+  
+  body .grid-container input[type="text"],
+  body .grid-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  body .grid-container input[type="submit"] {
+    background-color: #38b5b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  body .grid-container input[type="submit"]:hover {
+    background-color: #2f8f94;
+  }
+  
+  @media (max-width: 768px) {
+    body .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    body .logo-title-container {
+      margin-bottom: 10px;
+    }
+  
+    body .menu ul {
+      flex-wrap: wrap;
+    }
+  
+    body .menu ul li {
+      margin: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body .logo {
+      width: 40px;
+    }
+  
+    body .title {
+      font-size: 16px;
+    }
+  
+    body .menu ul {
+      flex-direction: column;
+    }
+  
+    body .menu ul li {
+      margin: 5px 0;
+    }
+  }
+  

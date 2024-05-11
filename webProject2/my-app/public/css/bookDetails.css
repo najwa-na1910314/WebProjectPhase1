@@ -1,0 +1,115 @@
+/* Reset some default browser styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.site-header {
+    background-color: #38b5b9; /* Header background color */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.header-logo img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 15px;
+}
+
+.header-title {
+    margin: 0;
+    color: white; /* Title color matching button color */
+}
+
+/* Hover effect for header */
+.site-header:hover {
+    background-color: #2c6272; /* Darker shade for hover */
+}
+
+.purchase-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #38b5b9;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #2c6272;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .purchase-container {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+    }
+
+    .btn-submit {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .purchase-container {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 6px;
+    }
+
+    .btn-submit {
+        padding: 6px;
+    }
+
+    .header-logo img {
+        width: 40px;
+    }
+
+    .site-header {
+        padding: 10px 15px;
+    }
+}
