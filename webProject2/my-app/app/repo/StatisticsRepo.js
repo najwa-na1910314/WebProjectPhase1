@@ -1,8 +1,6 @@
 import { PrismaClient } from "@prisma/client";
-//import { subMonths } from "date-fns";
 
 const prisma = new PrismaClient();
-//const sixMonthsAgo = subMonths(new Date(), 6);
 
 class StatisticeRepo {
   async gettotalPurchasesPerProductAndYear() {
