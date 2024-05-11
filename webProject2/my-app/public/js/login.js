@@ -8,6 +8,7 @@ function validateForm() {
   // Prevent the form from submitting
   return false;
 }
+
 async function user_login(username, password) {
   let request = await fetch("../api/users");
   let data = await request.json();

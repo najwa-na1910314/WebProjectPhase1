@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", async () => {
   //completed
   var bookId = window.location.href.split("=")[1];
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     //let bookIndex = booklist.findIndex((book)=>book["_id"]==bookId)
     //console.log(bookIndex)
     booklist = JSON.parse(localStorage.getItem("books"));
-    bookIndex = booklist.findIndex((book) => book["_id"] == bookId);
+    bookIndex = booklist.findIndex((book) => book["book_id"] == bookId);
     if (bookIndex != -1) {
       fillData(booklist[bookIndex]);
     } else {
@@ -83,9 +84,88 @@ function fillData(book) {
   document.getElementById("buildingNO").value =
     user_data["shippingAddress"]["buildingNo"];
 }
+*/
 /*
 async function storeOrder() {
   let file = await fetch("orderHistory.json");
   console.log(file);
 }
 */
+
+import prisma from './prisma'; // Import Prisma client instance
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const bookId = urlParams.get("bookId");
+
+  if (bookId) {
+    try {
+      const book = await fetchBookDetails(bookId);
+      fillData(book);
+    } catch (error) {
+      console.error("Error fetching book details:", error);
+    }
+  }
+
+  const buybtn = document.getElementById("buybtn");
+  buybtn.addEventListener("click", async (event) => {
+    event.preventDefault();
+
+    const quantity = parseInt(document.getElementById("book_quantity").value);
+    const bookPrice = parseFloat(document.getElementById("book_price").value);
+
+    const totalCost = quantity * bookPrice;
+
+    try {
+      const user_data = await fetchUserData(); // Fetch user data from Prisma
+      if (parseInt(user_data.bankAccount.balance) >= totalCost) {
+        const orderData = {
+          book_quantity: quantity,
+          book_id_fk: parseInt(bookId),
+          user_id_fk: parseInt(user_data.user_id),
+        };
+        const newOrders = await prisma.order.create({ data: orderData });
+        updateBalanceAndUI(newOrders, quantity, totalCost, user_data);
+      } else {
+        const balanceError = document.getElementById("balance_error");
+        balanceError.innerHTML = `Insufficient Balance, ${user_data.first_name} has only ${user_data.bankAccount.balance}`;
+      }
+    } catch (error) {
+      console.error("Error processing order:", error);
+    }
+  });
+});
+
+async function fetchBookDetails(bookId) {
+  return prisma.book.findUnique({
+    where: { book_id: parseInt(bookId) }
+  });
+}
+
+async function fetchUserData() {
+  return prisma.userAccount.findFirst({
+    where: { user_id: 1 }, // You need to replace this with the actual user ID
+    include: { bankAccount: true } // Include related bank account data
+  });
+}
+
+async function updateBalanceAndUI(newOrders, quantity, totalCost, userData) {
+  // Update user's balance
+  await prisma.bankAccount.update({
+    where: { bank_account_id: userData.bankAccount.bank_account_id },
+    data: { balance: userData.bankAccount.balance - totalCost }
+  });
+
+  // Update UI here if needed
+}
+
+function fillData(book) {
+  document.getElementById("book_id").value = book.book_id;
+  document.getElementById("book_title").value = book.book_title;
+  document.getElementById("book_quantity").value = 1;
+  document.getElementById("book_price").value = book.unit_price;
+  const totalCost = parseFloat(book.unit_price);
+  document.getElementById("total-price").value = totalCost.toFixed(2);
+
+  // Populate other fields if needed, such as shipping address
+}
