@@ -1,8 +1,8 @@
 import { PrismaClient } from "@prisma/client";
-import { subMonths } from "date-fns";
+//import { subMonths } from "date-fns";
 
 const prisma = new PrismaClient();
-const sixMonthsAgo = subMonths(new Date(), 6);
+//const sixMonthsAgo = subMonths(new Date(), 6);
 
 class StatisticeRepo {
   async gettotalPurchasesPerProductAndYear() {
@@ -24,23 +24,18 @@ class StatisticeRepo {
     });
   }
 
-  async topThreeProducts() {
-    return await prisma.order.groupBy({
-      by: ["books"],
+  async getTopThreeProductsLastSixMonths() {
+    return await prisma.order.findMany({
       where: {
         order_date: {
-          gte: sixMonthsAgo,
+          gte: new Date(new Date().setMonth(new Date().getMonth() - 6)),
         },
       },
-      _count: {
-        orders: true,
+      select: {
+        book_id_fk: true,
       },
-      orderBy: {
-        orders: "desc",
-      },
-      take: 3,
     });
-  }
+}
 
   async productTypesNeverPurchased() {
     return await prisma.catagory.findMany({

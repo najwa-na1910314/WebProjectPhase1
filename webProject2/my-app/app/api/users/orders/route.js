@@ -1,4 +1,5 @@
 import usersRepo from "@/app/repo/UsersRepo.js";
+import statisticsRepo from "@/app/repo/StatisticsRepo";
 
 export async function GET(request){
     let {searchParams} = new URL(request.url)
@@ -10,7 +11,9 @@ export async function GET(request){
         response = await usersRepo.getOrderByUserId(parseInt(value))
     } else if(filterType == "border"){ // id for the book
         response = await usersRepo.getOrderByBookId(parseInt(value))
-    } 
+    } else if(filterType == "TotalPurchase"){
+        response = await statisticsRepo.gettotalPurchasesPerProductAndYear()
+    }
     else {
         response = await usersRepo.getOrders() // get all orders
     }  
